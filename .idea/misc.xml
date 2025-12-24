@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/02-SpringBootDemo/pom.xml" />
         <option value="$PROJECT_DIR$/03-Spring-Acuator-Demo/pom.xml" />
         <option value="$PROJECT_DIR$/04-Actuator-Security-Demo/pom.xml" />
+        <option value="$PROJECT_DIR$/05-SpringCore-Demo/pom.xml" />
       </list>
     </option>
   </component>

@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Spring-Acuator-Demo" />
+        <module name="ConstructorInjection" />
         <module name="Actuator-Security-Demo" />
       </profile>
     </annotationProcessing>
@@ -18,6 +19,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Actuator-Security-Demo" options="-parameters" />
+      <module name="ConstructorInjection" options="-parameters" />
       <module name="Spring-Acuator-Demo" options="-parameters" />
       <module name="module2" options="-parameters" />
       <module name="mycoolapp" options="-parameters" />
