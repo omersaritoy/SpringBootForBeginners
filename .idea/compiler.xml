@@ -7,8 +7,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Spring-Acuator-Demo" />
-        <module name="ConstructorInjection" />
         <module name="Actuator-Security-Demo" />
+        <module name="ConstructorInjection" />
+        <module name="SeterInjection" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -20,7 +21,11 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Actuator-Security-Demo" options="-parameters" />
       <module name="ConstructorInjection" options="-parameters" />
+      <module name="SeterInjection" options="-parameters" />
       <module name="Spring-Acuator-Demo" options="-parameters" />
+      <module name="SpringCore-ComponentScanning" options="-parameters" />
+      <module name="SpringCore-ComponentScanning.main" options="-parameters" />
+      <module name="SpringCore-ComponentScanning.test" options="-parameters" />
       <module name="module2" options="-parameters" />
       <module name="mycoolapp" options="-parameters" />
     </option>

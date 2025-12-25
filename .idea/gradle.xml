@@ -10,6 +10,14 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$/04-Actuator-Security-Demo" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/06-SpringCore-ComponentScanning" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/06-SpringCore-ComponentScanning" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/acuator-demo" />
       </GradleProjectSettings>
     </option>
