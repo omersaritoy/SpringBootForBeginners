@@ -11,6 +11,11 @@
         <option value="$PROJECT_DIR$/04-Actuator-Security-Demo/pom.xml" />
         <option value="$PROJECT_DIR$/05-SpringCore-Demo/pom.xml" />
         <option value="$PROJECT_DIR$/07-SeterInjection/pom.xml" />
+        <option value="$PROJECT_DIR$/08-SpringCore-Qualifiers/pom.xml" />
+        <option value="$PROJECT_DIR$/09-Lazy-Initialization/pom.xml" />
+        <option value="$PROJECT_DIR$/10-Bean-Scope/pom.xml" />
+        <option value="$PROJECT_DIR$/11-Bean-lifecycle-methods/pom.xml" />
+        <option value="$PROJECT_DIR$/12-java-config-bean/pom.xml" />
       </list>
     </option>
   </component>

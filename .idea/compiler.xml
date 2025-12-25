@@ -6,10 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Spring-Acuator-Demo" />
         <module name="Actuator-Security-Demo" />
         <module name="ConstructorInjection" />
+        <module name="java-config-bean" />
+        <module name="Spring-Acuator-Demo" />
+        <module name="Spring-Core" />
+        <module name="Lazy-Initialization" />
         <module name="SeterInjection" />
+        <module name="SpringCore-Qualifiers" />
+        <module name="Bean-Scope" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -20,12 +25,17 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Actuator-Security-Demo" options="-parameters" />
+      <module name="Bean-Scope" options="-parameters" />
       <module name="ConstructorInjection" options="-parameters" />
+      <module name="Lazy-Initialization" options="-parameters" />
       <module name="SeterInjection" options="-parameters" />
       <module name="Spring-Acuator-Demo" options="-parameters" />
+      <module name="Spring-Core" options="-parameters" />
       <module name="SpringCore-ComponentScanning" options="-parameters" />
       <module name="SpringCore-ComponentScanning.main" options="-parameters" />
       <module name="SpringCore-ComponentScanning.test" options="-parameters" />
+      <module name="SpringCore-Qualifiers" options="-parameters" />
+      <module name="java-config-bean" options="-parameters" />
       <module name="module2" options="-parameters" />
       <module name="mycoolapp" options="-parameters" />
     </option>
