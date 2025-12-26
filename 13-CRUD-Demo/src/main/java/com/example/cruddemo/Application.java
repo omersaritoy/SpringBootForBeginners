@@ -9,6 +9,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 
+import java.util.List;
+
 @SpringBootApplication
 public class Application {
 
@@ -22,28 +24,37 @@ public class Application {
 
         return runner ->
         {
-//                createStudent(studentDao);
-//                createMultipleStudents(studentDao);
-                readStudentDAO(studentDao);
+            //createStudent(studentDao);
+            //createMultipleStudents(studentDao);
+            //readStudentDAO(studentDao);
+
+            queryForStudents(studentDao);
 
         };
+    }
+
+    private void queryForStudents(StudentDAO studentDao) {
+        List<Student> theStudents=studentDao.findAll();
+
+        for(Student student:theStudents)
+            System.out.println(student.toString());
     }
 
     private void readStudentDAO(StudentDAO studentDao) {
 
         System.out.println("Creating new student object ...");
-        Student tempStudent=new Student("Omer","Saritoy","omer.saritoy@test.com");
+        Student tempStudent = new Student("Omer", "Saritoy", "omer.saritoy@test.com");
 
         System.out.println("Student Saving ...");
         studentDao.save(tempStudent);
 
-        int theId= tempStudent.getId();
-        System.out.println("Saved student. Generated id:"+theId);
+        int theId = tempStudent.getId();
+        System.out.println("Saved student. Generated id:" + theId);
 
-        System.out.println("Retrieving student with id: "+theId);
-        Student myStudent=studentDao.findById(theId);
+        System.out.println("Retrieving student with id: " + theId);
+        Student myStudent = studentDao.findById(theId);
 
-        System.out.println("Found the student: "+myStudent);
+        System.out.println("Found the student: " + myStudent);
 
     }
 
