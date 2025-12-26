@@ -1,6 +1,7 @@
 package com.example.cruddemo.dao;
 
 import com.example.cruddemo.entity.Student;
+import jakarta.persistence.criteria.CriteriaBuilder;
 
 import java.util.List;
 
@@ -11,4 +12,10 @@ public interface StudentDAO {
     Student findById(Integer id);
 
     List<Student> findAll();
+
+    List<Student> findByLastName(String theLastName);
+
+    void update(Student student);
+
+    void delete(Integer id);
 }
