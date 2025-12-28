@@ -8,6 +8,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Actuator-Security-Demo" />
         <module name="ConstructorInjection" />
+        <module name="Bean-Scope (2)" />
+        <module name="Bean-Scope (1)" />
         <module name="java-config-bean" />
         <module name="Spring-Acuator-Demo" />
         <module name="Spring-Core" />
@@ -27,6 +29,8 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Actuator-Security-Demo" options="-parameters" />
       <module name="Bean-Scope" options="-parameters" />
+      <module name="Bean-Scope (1)" options="-parameters" />
+      <module name="Bean-Scope (2)" options="-parameters" />
       <module name="CRUD-Demo" options="-parameters" />
       <module name="ConstructorInjection" options="-parameters" />
       <module name="Lazy-Initialization" options="-parameters" />

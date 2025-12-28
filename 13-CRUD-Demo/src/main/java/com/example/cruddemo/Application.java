@@ -32,30 +32,38 @@ public class Application {
 
 //            queryForStudentsByLastName(studentDao);
 
-            updateStudent(studentDao);
+            //   updateStudent(studentDao);
+            //deleteStudent(studentDao);
 
-
+            deleteAllStudents(studentDao);
         };
     }
 
-    private void updateStudent(StudentDAO studentDao) {
-        int studentId=1;
-        System.out.println("Getting student with id :" +studentId);
+    private void deleteAllStudents(StudentDAO studentDao) {
+        System.out.println("Deleting all students...");
+        int numRowsDeleted = studentDao.deleteAll();
+        System.out.println("Deleted row count: " + numRowsDeleted);
+        System.out.println("Deleted all students successfully!");
+    }
 
-        Student myStudent=studentDao.findById(studentId);
+    private void updateStudent(StudentDAO studentDao) {
+        int studentId = 1;
+        System.out.println("Getting student with id :" + studentId);
+
+        Student myStudent = studentDao.findById(studentId);
 
         System.out.println("Updating  student ...");
 
         myStudent.setFirstName("Scooby");
         studentDao.update(myStudent);
 
-        System.out.println("updated student: "+myStudent);
+        System.out.println("updated student: " + myStudent);
     }
 
     private void queryForStudentsByLastName(StudentDAO studentDao) {
-        List<Student> theStudents=studentDao.findByLastName("Doe");
+        List<Student> theStudents = studentDao.findByLastName("Doe");
 
-        for(Student student:theStudents)
+        for (Student student : theStudents)
             System.out.println(student.toString());
     }
 
@@ -115,6 +123,12 @@ public class Application {
 
         // display id of the saved student
         System.out.println("Saved student. Generated id: " + tempStudent.getId());
+    }
+
+    private void deleteStudent(StudentDAO studentDao) {
+        int studentId = 3;
+        System.out.println("Deleting student id:" + studentId);
+        studentDao.delete(studentId);
     }
 
 }
