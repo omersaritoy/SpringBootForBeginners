@@ -18,10 +18,11 @@
         <option value="$PROJECT_DIR$/12-java-config-bean/pom.xml" />
         <option value="$PROJECT_DIR$/13-CRUD-Demo/pom.xml" />
         <option value="$PROJECT_DIR$/14-Spring-Boot-Rest-CRUD/pom.xml" />
+        <option value="$PROJECT_DIR$/15-SpringBoot-RestAPI-Demo/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="22" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

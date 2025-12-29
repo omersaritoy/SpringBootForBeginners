@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Bean-Scope (2)" />
         <module name="Bean-Scope (1)" />
+        <module name="SpringBoot-RestAPI-Demo" />
         <module name="Lazy-Initialization" />
         <module name="SeterInjection" />
         <module name="CRUD-Demo" />
@@ -39,6 +40,7 @@
       <module name="Spring-Acuator-Demo" options="-parameters" />
       <module name="Spring-Boot-Rest-CRUD" options="-parameters" />
       <module name="Spring-Core" options="-parameters" />
+      <module name="SpringBoot-RestAPI-Demo" options="-parameters" />
       <module name="SpringCore-ComponentScanning" options="-parameters" />
       <module name="SpringCore-ComponentScanning.main" options="-parameters" />
       <module name="SpringCore-ComponentScanning.test" options="-parameters" />
