@@ -6,18 +6,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Actuator-Security-Demo" />
-        <module name="ConstructorInjection" />
         <module name="Bean-Scope (2)" />
         <module name="Bean-Scope (1)" />
-        <module name="java-config-bean" />
-        <module name="Spring-Acuator-Demo" />
-        <module name="Spring-Core" />
         <module name="Lazy-Initialization" />
         <module name="SeterInjection" />
         <module name="CRUD-Demo" />
-        <module name="SpringCore-Qualifiers" />
         <module name="Bean-Scope" />
+        <module name="Actuator-Security-Demo" />
+        <module name="ConstructorInjection" />
+        <module name="java-config-bean" />
+        <module name="Spring-Acuator-Demo" />
+        <module name="Spring-Core" />
+        <module name="SpringCore-Qualifiers" />
+        <module name="Spring-Boot-Rest-CRUD" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -36,6 +37,7 @@
       <module name="Lazy-Initialization" options="-parameters" />
       <module name="SeterInjection" options="-parameters" />
       <module name="Spring-Acuator-Demo" options="-parameters" />
+      <module name="Spring-Boot-Rest-CRUD" options="-parameters" />
       <module name="Spring-Core" options="-parameters" />
       <module name="SpringCore-ComponentScanning" options="-parameters" />
       <module name="SpringCore-ComponentScanning.main" options="-parameters" />
