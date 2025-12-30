@@ -13,6 +13,7 @@
         <module name="SeterInjection" />
         <module name="CRUD-Demo" />
         <module name="Bean-Scope" />
+        <module name="SpringBoot-Rest-CRUD-JPA" />
         <module name="Actuator-Security-Demo" />
         <module name="ConstructorInjection" />
         <module name="java-config-bean" />
@@ -40,6 +41,7 @@
       <module name="Spring-Acuator-Demo" options="-parameters" />
       <module name="Spring-Boot-Rest-CRUD" options="-parameters" />
       <module name="Spring-Core" options="-parameters" />
+      <module name="SpringBoot-Rest-CRUD-JPA" options="-parameters" />
       <module name="SpringBoot-RestAPI-Demo" options="-parameters" />
       <module name="SpringCore-ComponentScanning" options="-parameters" />
       <module name="SpringCore-ComponentScanning.main" options="-parameters" />
