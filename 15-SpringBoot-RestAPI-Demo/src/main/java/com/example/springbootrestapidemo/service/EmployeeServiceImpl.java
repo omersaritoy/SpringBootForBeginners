@@ -8,7 +8,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 @Service
-public class EmployeeServiceImpl  implements  EmployeeService{
+public class EmployeeServiceImpl implements EmployeeService {
     private final EmployeeDAO employeeDAO;
 
     public EmployeeServiceImpl(EmployeeDAO employeeDAO) {
@@ -23,9 +23,9 @@ public class EmployeeServiceImpl  implements  EmployeeService{
 
     @Override
     public Employee findById(int theId) {
-        Employee employee=employeeDAO.findById(theId);
-        if(employee==null)
-            throw new RuntimeException("Employee id not found-"+theId);
+        Employee employee = employeeDAO.findById(theId);
+        if (employee == null)
+            throw new RuntimeException("Employee id not found-" + theId);
 
         return employee;
     }
@@ -37,9 +37,13 @@ public class EmployeeServiceImpl  implements  EmployeeService{
 
         return employeeDAO.save(theEmployee);
     }
+
     @Transactional
     @Override
     public void deleteById(int theId) {
+        Employee employee = employeeDAO.findById(theId);
+        if (employee == null)
+            throw new RuntimeException("Employee id not found-" + theId);
         employeeDAO.deleteById(theId);
     }
 
