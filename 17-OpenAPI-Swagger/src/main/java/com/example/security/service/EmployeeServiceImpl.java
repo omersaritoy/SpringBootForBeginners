@@ -1,7 +1,7 @@
-package com.example.openapiswagger.service;
+package com.example.security.service;
 
-import com.example.openapiswagger.dao.EmployeeDAO;
-import com.example.openapiswagger.entity.Employee;
+import com.example.security.dao.EmployeeDAO;
+import com.example.security.entity.Employee;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

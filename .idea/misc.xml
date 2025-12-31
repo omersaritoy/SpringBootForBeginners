@@ -22,6 +22,7 @@
         <option value="$PROJECT_DIR$/16-SpringBoot-Rest-CRUD-JPA/pom.xml" />
         <option value="$PROJECT_DIR$/06-SpringCore-ComponentScanning/17-openapi-swagger/pom.xml" />
         <option value="$PROJECT_DIR$/17-OpenAPI-Swagger/pom.xml" />
+        <option value="$PROJECT_DIR$/18-Spring-Security/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

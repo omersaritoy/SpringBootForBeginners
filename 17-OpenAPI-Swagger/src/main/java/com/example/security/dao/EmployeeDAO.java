@@ -1,8 +1,8 @@
-package com.example.openapiswagger.dao;
+package com.example.security.dao;
 
 
 
-import com.example.openapiswagger.entity.Employee;
+import com.example.security.entity.Employee;
 
 import java.util.List;
 

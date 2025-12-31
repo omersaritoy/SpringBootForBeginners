@@ -1,8 +1,8 @@
-package com.example.openapiswagger.rest;
+package com.example.security.rest;
 
 
-import com.example.openapiswagger.entity.Employee;
-import com.example.openapiswagger.service.EmployeeService;
+import com.example.security.entity.Employee;
+import com.example.security.service.EmployeeService;
 import org.springframework.web.bind.annotation.*;
 import tools.jackson.databind.json.JsonMapper;
 

@@ -1,4 +1,4 @@
-package com.example.openapiswagger.entity;
+package com.example.security.entity;
 
 import jakarta.persistence.*;
 

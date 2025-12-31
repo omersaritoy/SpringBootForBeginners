@@ -1,7 +1,7 @@
-package com.example.openapiswagger.dao;
+package com.example.security.dao;
 
 
-import com.example.openapiswagger.entity.Employee;
+import com.example.security.entity.Employee;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.TypedQuery;
 import org.springframework.stereotype.Repository;
