@@ -6,6 +6,7 @@
     <file url="file://$PROJECT_DIR$/03-Spring-Acuator-Demo/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/04-Actuator-Security-Demo/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/05-SpringCore-Demo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/06-SpringCore-ComponentScanning/17-openapi-swagger/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/07-SeterInjection/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/08-SpringCore-Qualifiers/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/09-Lazy-Initialization/src/main/java" charset="UTF-8" />
@@ -16,6 +17,7 @@
     <file url="file://$PROJECT_DIR$/14-Spring-Boot-Rest-CRUD/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/15-SpringBoot-RestAPI-Demo/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/16-SpringBoot-Rest-CRUD-JPA/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/17-OpenAPI-Swagger/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mycoolapp/src/main/java" charset="UTF-8" />
   </component>
 </project>

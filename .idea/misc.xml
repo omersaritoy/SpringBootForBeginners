@@ -20,7 +20,14 @@
         <option value="$PROJECT_DIR$/14-Spring-Boot-Rest-CRUD/pom.xml" />
         <option value="$PROJECT_DIR$/15-SpringBoot-RestAPI-Demo/pom.xml" />
         <option value="$PROJECT_DIR$/16-SpringBoot-Rest-CRUD-JPA/pom.xml" />
+        <option value="$PROJECT_DIR$/06-SpringCore-ComponentScanning/17-openapi-swagger/pom.xml" />
+        <option value="$PROJECT_DIR$/17-OpenAPI-Swagger/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/06-SpringCore-ComponentScanning/17-openapi-swagger/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK">

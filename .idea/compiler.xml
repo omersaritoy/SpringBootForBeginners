@@ -14,6 +14,7 @@
         <module name="CRUD-Demo" />
         <module name="Bean-Scope" />
         <module name="SpringBoot-Rest-CRUD-JPA" />
+        <module name="OpenAPI-Swagger" />
         <module name="Actuator-Security-Demo" />
         <module name="ConstructorInjection" />
         <module name="java-config-bean" />
@@ -26,6 +27,7 @@
     <bytecodeTargetLevel>
       <module name="module2" target="17" />
       <module name="mycoolapp" target="17" />
+      <module name="openapi-swagger" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -37,6 +39,7 @@
       <module name="CRUD-Demo" options="-parameters" />
       <module name="ConstructorInjection" options="-parameters" />
       <module name="Lazy-Initialization" options="-parameters" />
+      <module name="OpenAPI-Swagger" options="-parameters" />
       <module name="SeterInjection" options="-parameters" />
       <module name="Spring-Acuator-Demo" options="-parameters" />
       <module name="Spring-Boot-Rest-CRUD" options="-parameters" />
@@ -50,6 +53,7 @@
       <module name="java-config-bean" options="-parameters" />
       <module name="module2" options="-parameters" />
       <module name="mycoolapp" options="-parameters" />
+      <module name="openapi-swagger" options="-parameters" />
     </option>
   </component>
 </project>
