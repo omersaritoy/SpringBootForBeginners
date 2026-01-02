@@ -16,6 +16,7 @@
         <module name="Bean-Scope" />
         <module name="security-demo" />
         <module name="SpringBoot-Rest-CRUD-JPA" />
+        <module name="cruddemo" />
         <module name="OpenAPI-Swagger" />
         <module name="Actuator-Security-Demo" />
         <module name="ConstructorInjection" />
@@ -53,6 +54,7 @@
       <module name="SpringCore-ComponentScanning.test" options="-parameters" />
       <module name="SpringCore-Qualifiers" options="-parameters" />
       <module name="TymeleafDemo" options="-parameters" />
+      <module name="cruddemo" options="-parameters" />
       <module name="java-config-bean" options="-parameters" />
       <module name="module2" options="-parameters" />
       <module name="mycoolapp" options="-parameters" />
