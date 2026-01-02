@@ -23,6 +23,7 @@
         <option value="$PROJECT_DIR$/06-SpringCore-ComponentScanning/17-openapi-swagger/pom.xml" />
         <option value="$PROJECT_DIR$/17-OpenAPI-Swagger/pom.xml" />
         <option value="$PROJECT_DIR$/18-Spring-Security/pom.xml" />
+        <option value="$PROJECT_DIR$/19-TymeleafDemo/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

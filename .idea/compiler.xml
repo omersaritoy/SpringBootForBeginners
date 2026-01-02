@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="TymeleafDemo" />
         <module name="Bean-Scope (2)" />
         <module name="Bean-Scope (1)" />
         <module name="SpringBoot-RestAPI-Demo" />
@@ -51,6 +52,7 @@
       <module name="SpringCore-ComponentScanning.main" options="-parameters" />
       <module name="SpringCore-ComponentScanning.test" options="-parameters" />
       <module name="SpringCore-Qualifiers" options="-parameters" />
+      <module name="TymeleafDemo" options="-parameters" />
       <module name="java-config-bean" options="-parameters" />
       <module name="module2" options="-parameters" />
       <module name="mycoolapp" options="-parameters" />
