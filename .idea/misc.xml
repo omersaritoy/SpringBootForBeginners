@@ -25,6 +25,7 @@
         <option value="$PROJECT_DIR$/18-Spring-Security/pom.xml" />
         <option value="$PROJECT_DIR$/19-TymeleafDemo/pom.xml" />
         <option value="$PROJECT_DIR$/20-spring-boot-spring-mvc-crud-starter-code/pom.xml" />
+        <option value="$PROJECT_DIR$/21-MVCSecurity/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
@@ -33,7 +34,7 @@
       </set>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_25" default="true" project-jdk-name="openjdk-25" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_24" default="true" project-jdk-name="openjdk-25" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

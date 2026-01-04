@@ -17,13 +17,16 @@
         <module name="security-demo" />
         <module name="SpringBoot-Rest-CRUD-JPA" />
         <module name="cruddemo" />
+        <module name="MVCSecurity" />
         <module name="OpenAPI-Swagger" />
         <module name="Actuator-Security-Demo" />
         <module name="ConstructorInjection" />
         <module name="java-config-bean" />
         <module name="Spring-Acuator-Demo" />
         <module name="Spring-Core" />
+        <module name="OpenAPI-Swagger (1)" />
         <module name="SpringCore-Qualifiers" />
+        <module name="Spring Security" />
         <module name="Spring-Boot-Rest-CRUD" />
       </profile>
     </annotationProcessing>
@@ -42,8 +45,11 @@
       <module name="CRUD-Demo" options="-parameters" />
       <module name="ConstructorInjection" options="-parameters" />
       <module name="Lazy-Initialization" options="-parameters" />
+      <module name="MVCSecurity" options="-parameters" />
       <module name="OpenAPI-Swagger" options="-parameters" />
+      <module name="OpenAPI-Swagger (1)" options="-parameters" />
       <module name="SeterInjection" options="-parameters" />
+      <module name="Spring Security" options="-parameters" />
       <module name="Spring-Acuator-Demo" options="-parameters" />
       <module name="Spring-Boot-Rest-CRUD" options="-parameters" />
       <module name="Spring-Core" options="-parameters" />
