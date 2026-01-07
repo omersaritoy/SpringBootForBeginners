@@ -11,6 +11,7 @@
         <module name="Bean-Scope (1)" />
         <module name="SpringBoot-RestAPI-Demo" />
         <module name="Lazy-Initialization" />
+        <module name="jpa-advanced" />
         <module name="SeterInjection" />
         <module name="CRUD-Demo" />
         <module name="Bean-Scope" />
@@ -62,6 +63,7 @@
       <module name="TymeleafDemo" options="-parameters" />
       <module name="cruddemo" options="-parameters" />
       <module name="java-config-bean" options="-parameters" />
+      <module name="jpa-advanced" options="-parameters" />
       <module name="module2" options="-parameters" />
       <module name="mycoolapp" options="-parameters" />
       <module name="openapi-swagger" options="-parameters" />
