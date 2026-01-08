@@ -18,22 +18,48 @@ public class Application {
 
 
     @Bean
-    public CommandLineRunner commandLineRunner(AppDAO appDAO){
+    public CommandLineRunner commandLineRunner(AppDAO appDAO) {
 
-        return runner->{
+        return runner -> {
             createInstructor(appDAO);
         };
     }
 
     private void createInstructor(AppDAO appDAO) {
-        Instructor temp=new Instructor("Ömer","Cavcav","cavcav@gmail.com");
-        InstructorDetail tempInstructorDetail=new InstructorDetail("www.omer.com","Play Table Tennis");
-        temp.setInstructorDetail(tempInstructorDetail);
 
-        System.out.println("Saving instructor: "+temp);
-        appDAO.save(temp);
-        System.out.println("Done.");
+        /*
+		// create the instructor
+		Instructor tempInstructor =
+				new Instructor("Haci", "Cavcav", "cavcav@luv2code.com");
 
+		// create the instructor detail
+		InstructorDetail tempInstructorDetail =
+				new InstructorDetail(
+						"http://www.cavcav.com/youtube",
+						"Luv 2 code!");
+            */
+
+        // create the instructor
+        Instructor tempInstructor =
+                new Instructor("Madhu", "Patel", "madhu@luv2code.com");
+
+        // create the instructor detail
+        InstructorDetail tempInstructorDetail =
+                new InstructorDetail(
+                        "http://www.luv2code.com/youtube",
+                        "Guitar");
+
+        // associate the objects
+        tempInstructor.setInstructorDetail(tempInstructorDetail);
+
+        // save the instructor
+        //
+        // NOTE: this will ALSO save the details object
+        // because of CascadeType.ALL
+        //
+        System.out.println("Saving instructor: " + tempInstructor);
+        appDAO.save(tempInstructor);
+
+        System.out.println("Done!");
     }
-
 }
