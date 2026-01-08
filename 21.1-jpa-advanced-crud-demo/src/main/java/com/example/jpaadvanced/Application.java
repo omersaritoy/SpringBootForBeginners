@@ -21,8 +21,24 @@ public class Application {
     public CommandLineRunner commandLineRunner(AppDAO appDAO) {
 
         return runner -> {
-            createInstructor(appDAO);
+           // createInstructor(appDAO);
+            findInstructor(appDAO);
+
         };
+    }
+
+    private void findInstructor(AppDAO appDAO) {
+
+        //select id
+        int theId=2;
+        System.out.println("Finding instructor id : "+theId);
+
+        //trying get instructor with id
+        Instructor temp=appDAO.findInstructorById(theId);
+        System.out.println("Instructor: "+temp);
+        System.out.println("The associated instructordetail only : "+temp.getInstructorDetail());
+
+
     }
 
     private void createInstructor(AppDAO appDAO) {
