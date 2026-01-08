@@ -21,10 +21,23 @@ public class Application {
     public CommandLineRunner commandLineRunner(AppDAO appDAO) {
 
         return runner -> {
-           // createInstructor(appDAO);
-            findInstructor(appDAO);
+            // createInstructor(appDAO);
+            // findInstructor(appDAO);
+            deleteInstructor(appDAO);
+
 
         };
+    }
+
+    private void deleteInstructor(AppDAO appDAO) {
+        int theId=1;
+
+        System.out.println("Deleting instructor id : "+theId);
+
+        appDAO.deleteInstructorById(theId);
+
+        System.out.println("Done!");
+
     }
 
     private void findInstructor(AppDAO appDAO) {
