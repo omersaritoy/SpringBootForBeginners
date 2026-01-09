@@ -25,9 +25,27 @@ public class Application {
             // createInstructor(appDAO);
             // findInstructor(appDAO);
             //deleteInstructor(appDAO);
-
+            findInstructorDetail(appDAO);
 
         };
+    }
+
+    //finding instructor detail by id
+    private void findInstructorDetail(AppDAO appDAO) {
+
+        //get the instructor detail object
+        int theId=5;
+        InstructorDetail temp=appDAO.findInstructorDetailById(theId);
+
+        //print the instructor detail
+        System.out.println("Instructor Detail: "+temp);
+
+        //print the associated instructor
+        System.out.println("The associated instructor : "+temp.getInstructor());
+
+        System.out.println("Done!");
+
+
     }
 
     private void deleteInstructor(AppDAO appDAO) {

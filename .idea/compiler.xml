@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="TymeleafDemo" />
+        <module name="jpa-advanced (1)" />
         <module name="Bean-Scope (2)" />
         <module name="Bean-Scope (1)" />
         <module name="SpringBoot-RestAPI-Demo" />
@@ -64,6 +65,7 @@
       <module name="cruddemo" options="-parameters" />
       <module name="java-config-bean" options="-parameters" />
       <module name="jpa-advanced" options="-parameters" />
+      <module name="jpa-advanced (1)" options="-parameters" />
       <module name="module2" options="-parameters" />
       <module name="mycoolapp" options="-parameters" />
       <module name="openapi-swagger" options="-parameters" />

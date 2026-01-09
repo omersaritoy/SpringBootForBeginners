@@ -27,6 +27,7 @@
         <option value="$PROJECT_DIR$/20-spring-boot-spring-mvc-crud-starter-code/pom.xml" />
         <option value="$PROJECT_DIR$/21-MVCSecurity/pom.xml" />
         <option value="$PROJECT_DIR$/21.1-jpa-advanced-crud-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/21.2-jpa-one-to-one-bi/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
