@@ -6,29 +6,30 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="TymeleafDemo" />
-        <module name="jpa-advanced (1)" />
         <module name="Bean-Scope (2)" />
-        <module name="Bean-Scope (1)" />
-        <module name="SpringBoot-RestAPI-Demo" />
+        <module name="jpa-advanced (2)" />
         <module name="Lazy-Initialization" />
         <module name="jpa-advanced" />
         <module name="SeterInjection" />
-        <module name="CRUD-Demo" />
         <module name="Bean-Scope" />
-        <module name="security-demo" />
-        <module name="SpringBoot-Rest-CRUD-JPA" />
         <module name="cruddemo" />
         <module name="MVCSecurity" />
-        <module name="OpenAPI-Swagger" />
         <module name="Actuator-Security-Demo" />
         <module name="ConstructorInjection" />
         <module name="java-config-bean" />
-        <module name="Spring-Acuator-Demo" />
-        <module name="Spring-Core" />
         <module name="OpenAPI-Swagger (1)" />
         <module name="SpringCore-Qualifiers" />
         <module name="Spring Security" />
+        <module name="TymeleafDemo" />
+        <module name="jpa-advanced (1)" />
+        <module name="Bean-Scope (1)" />
+        <module name="SpringBoot-RestAPI-Demo" />
+        <module name="CRUD-Demo" />
+        <module name="security-demo" />
+        <module name="SpringBoot-Rest-CRUD-JPA" />
+        <module name="OpenAPI-Swagger" />
+        <module name="Spring-Acuator-Demo" />
+        <module name="Spring-Core" />
         <module name="Spring-Boot-Rest-CRUD" />
       </profile>
     </annotationProcessing>
@@ -66,6 +67,7 @@
       <module name="java-config-bean" options="-parameters" />
       <module name="jpa-advanced" options="-parameters" />
       <module name="jpa-advanced (1)" options="-parameters" />
+      <module name="jpa-advanced (2)" options="-parameters" />
       <module name="module2" options="-parameters" />
       <module name="mycoolapp" options="-parameters" />
       <module name="openapi-swagger" options="-parameters" />
