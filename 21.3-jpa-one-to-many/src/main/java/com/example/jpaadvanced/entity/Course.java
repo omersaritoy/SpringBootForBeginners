@@ -25,7 +25,7 @@ public class Course {
     }
 
     public int getId() {
-        return id;
+        return id; 
     }
 
     public void setId(int id) {

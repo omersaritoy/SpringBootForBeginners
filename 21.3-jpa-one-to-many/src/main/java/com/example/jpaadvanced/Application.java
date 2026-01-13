@@ -10,6 +10,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
+import java.util.List;
+
 @SpringBootApplication
 public class Application {
 
@@ -28,9 +30,41 @@ public class Application {
             //deleteInstructor(appDAO);
             //findInstructorDetail(appDAO);
             //deleteInstructorDetail(appDAO);
-            createInstructorWithCourses(appDAO);
-
+            //createInstructorWithCourses(appDAO);
+            //findInstructorWithCourses(appDAO);
+            findCoursesForInstructor(appDAO);
         };
+    }
+
+    private void findCoursesForInstructor(AppDAO appDAO) {
+        int theId = 1;
+        //find instructor
+        System.out.println("Finding instructor id:" + theId);
+        Instructor tempInstructor = appDAO.findInstructorById(theId);
+
+        System.out.println("Instructor:" + tempInstructor);
+
+        //find courses for instructor
+        System.out.println("Finding courses for instructor id:"+theId);
+        List<Course> courses=appDAO.findCoursesByInstructorId(theId);
+
+        //associated the object
+        tempInstructor.setCourses(courses);
+
+        System.out.println("The associated courses:"+tempInstructor.getCourses());
+        System.out.println("Done!");
+    }
+
+    private void findInstructorWithCourses(AppDAO appDAO) {
+        int theId = 1;
+        System.out.println("Finding instructor id:" + theId);
+        Instructor tempInstructor = appDAO.findInstructorById(theId);
+
+        System.out.println("Instructor:" + tempInstructor);
+        System.out.println("the associated courses:" + tempInstructor.getCourses());
+
+
+        System.out.println("Done!");
     }
 
     private void createInstructorWithCourses(AppDAO appDAO) {
@@ -49,8 +83,8 @@ public class Application {
         tempInstructor.setInstructorDetail(tempInstructorDetail);
 
         //create some courses
-        Course tempCourse1=new Course("Air Guitar - The Ultimate Guide");
-        Course tempCourse2=new Course("The Pinball Masterclass");
+        Course tempCourse1 = new Course("Air Guitar - The Ultimate Guide");
+        Course tempCourse2 = new Course("The Pinball Masterclass");
 
         //add course to instructor
 
@@ -59,19 +93,18 @@ public class Application {
 
         //save the instructor
         //Note:this will also save the courses because of cascadetype.persist
-        System.out.println("Saving instructor: "+tempInstructor);
-        System.out.println("The courses: " +tempInstructor.getCourses());
+        System.out.println("Saving instructor: " + tempInstructor);
+        System.out.println("The courses: " + tempInstructor.getCourses());
 
         appDAO.save(tempInstructor);
-
 
 
     }
 
     //delete instructor detail
     private void deleteInstructorDetail(AppDAO appDAO) {
-        int theId=5;
-        System.out.println("Deleting instructor detail id : " +theId);
+        int theId = 5;
+        System.out.println("Deleting instructor detail id : " + theId);
 
         appDAO.deleteInstructorDetailById(theId);
 
@@ -82,14 +115,14 @@ public class Application {
     private void findInstructorDetail(AppDAO appDAO) {
 
         //get the instructor detail object
-        int theId=5;
-        InstructorDetail temp=appDAO.findInstructorDetailById(theId);
+        int theId = 5;
+        InstructorDetail temp = appDAO.findInstructorDetailById(theId);
 
         //print the instructor detail
-        System.out.println("Instructor Detail: "+temp);
+        System.out.println("Instructor Detail: " + temp);
 
         //print the associated instructor
-        System.out.println("The associated instructor : "+temp.getInstructor());
+        System.out.println("The associated instructor : " + temp.getInstructor());
 
         System.out.println("Done!");
 
@@ -135,18 +168,18 @@ public class Application {
 						"Luv 2 code!");
             */
 
-            // create the instructor
-            Instructor tempInstructor =
-                    new Instructor("Madhu", "Patel", "madhu@luv2code.com");
+        // create the instructor
+        Instructor tempInstructor =
+                new Instructor("Madhu", "Patel", "madhu@luv2code.com");
 
-            // create the instructor detail
-            InstructorDetail tempInstructorDetail =
-                    new InstructorDetail(
-                            "http://www.luv2code.com/youtube",
-                            "Guitar");
+        // create the instructor detail
+        InstructorDetail tempInstructorDetail =
+                new InstructorDetail(
+                        "http://www.luv2code.com/youtube",
+                        "Guitar");
 
-            // associate the objects
-            tempInstructor.setInstructorDetail(tempInstructorDetail);
+        // associate the objects
+        tempInstructor.setInstructorDetail(tempInstructorDetail);
 
         // save the instructor
         //

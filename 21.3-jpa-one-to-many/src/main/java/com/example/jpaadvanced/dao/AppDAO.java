@@ -1,8 +1,11 @@
 package com.example.jpaadvanced.dao;
 
+import com.example.jpaadvanced.entity.Course;
 import com.example.jpaadvanced.entity.Instructor;
 import com.example.jpaadvanced.entity.InstructorDetail;
 import org.springframework.stereotype.Repository;
+
+import java.util.List;
 
 
 public interface AppDAO {
@@ -11,5 +14,7 @@ public interface AppDAO {
     void deleteInstructorById(int theId);
     InstructorDetail findInstructorDetailById(int theId);
     void deleteInstructorDetailById(int theId);
+    List<Course> findCoursesByInstructorId(int theId);
+
 
 }
