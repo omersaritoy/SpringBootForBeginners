@@ -1,10 +1,7 @@
 package com.example.jpaadvanced;
 
 import com.example.jpaadvanced.dao.AppDAO;
-import com.example.jpaadvanced.entity.Course;
-import com.example.jpaadvanced.entity.Instructor;
-import com.example.jpaadvanced.entity.InstructorDetail;
-import com.example.jpaadvanced.entity.Review;
+import com.example.jpaadvanced.entity.*;
 import org.hibernate.tool.schema.internal.exec.ScriptTargetOutputToUrl;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -28,16 +25,95 @@ public class Application {
 
         return runner -> {
 
-            // createCourseAndReview(appDAO);
-            //retrieveCourseAndReviews(appDAO);
-            deleteCourseAndReviews(appDAO);
+            // createCourseAndStudent(appDAO);
+            //findCourseAndStudents(appDAO);
+            //findStudentAndCourses(appDAO);
+            // addMoreCoursesForStudent(appDAO);
+            //deleteCourse(appDAO);
+            deleteStudent(appDAO);
+
         };
     }
 
-    private void deleteCourseAndReviews(AppDAO appDAO) {
-        int theId=10;
+    private void deleteStudent(AppDAO appDAO) {
+        int theId=1;
 
-        System.out.println("Deleting course id:"+theId);
+        System.out.println("Deleting student id:"+theId);
+        appDAO.deleteStudentById(theId);
+        System.out.println("Done!");
+
+    }
+
+    private void addMoreCoursesForStudent(AppDAO appDAO) {
+
+        int theId = 2;
+        Student tempStudent = appDAO.findStudentAndCoursesByStudentId(theId);
+
+        // create more courses
+        Course tempCourse1 = new Course("Rubik's Cube - How to Speed Cube");
+        Course tempCourse2 = new Course("Atari 2600 - Game Development");
+
+        // add courses to student
+        tempStudent.addCourse(tempCourse1);
+        tempStudent.addCourse(tempCourse2);
+
+        System.out.println("Updating student: " + tempStudent);
+        System.out.println("associated courses: " + tempStudent.getCourses());
+
+        appDAO.update(tempStudent);
+
+        System.out.println("Done!");
+    }
+
+    private void findStudentAndCourses(AppDAO appDAO) {
+
+        int theId = 2;
+        Student tempStudent = appDAO.findStudentAndCoursesByStudentId(theId);
+
+        System.out.println("Loaded student: " + tempStudent);
+        System.out.println("Courses: " + tempStudent.getCourses());
+
+        System.out.println("Done!");
+    }
+
+    private void findCourseAndStudents(AppDAO appDAO) {
+        int theId = 10;
+        Course tempCourse = appDAO.findCourseAndStudentsByCourseId(theId);
+
+        System.out.println("Loaded course: " + tempCourse);
+        System.out.println("Students:" + tempCourse.getStudents());
+
+        System.out.println("Done!");
+    }
+
+    private void createCourseAndStudent(AppDAO appDAO) {
+        //create a course
+        Course course = new Course("Pacman-How To Score One Million Points");
+
+        //create the students
+        Student tempStudent = new Student("John", "Doe", "john.doe@gmail.com");
+        Student tempStudent2 = new Student("Carl", "Doe", "Carl.doe@gmail.com");
+        Student tempStudent3 = new Student("Marry", "Doe", "Marry.doe@gmail.com");
+
+        //add students to course
+        course.addStudent(tempStudent);
+        course.addStudent(tempStudent2);
+        course.addStudent(tempStudent3);
+
+
+        //save the course and associate
+        System.out.println("Saving the course:" + course);
+        System.out.println("associated studentd:" + course.getStudents());
+
+        appDAO.save(course);
+
+        System.out.println("Done!");
+    }
+
+    private void deleteCourseAndReviews(AppDAO appDAO) {
+        int theId = 10;
+
+        System.out.println("Deleting course id:" + theId);
 
         appDAO.deleteCourseById(theId);
 
@@ -46,8 +122,8 @@ public class Application {
 
     private void retrieveCourseAndReviews(AppDAO appDAO) {
         //get course and reviews
-        int theId=10;
-        Course tempCourse=appDAO.findCourseAndReviewsByCourseId(theId);
+        int theId = 10;
+        Course tempCourse = appDAO.findCourseAndReviewsByCourseId(theId);
 
         //print the course
         System.out.println(tempCourse);

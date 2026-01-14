@@ -3,6 +3,7 @@ package com.example.jpaadvanced.dao;
 import com.example.jpaadvanced.entity.Course;
 import com.example.jpaadvanced.entity.Instructor;
 import com.example.jpaadvanced.entity.InstructorDetail;
+import com.example.jpaadvanced.entity.Student;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -35,6 +36,12 @@ public interface AppDAO {
 
     Course findCourseAndReviewsByCourseId(int theId);
 
+    Course findCourseAndStudentsByCourseId(int theId);
 
+    Student findStudentAndCoursesByStudentId(int theId);
+
+    void update(Student tempStudent);
+
+    void deleteStudentById(int theId);
 
 }
