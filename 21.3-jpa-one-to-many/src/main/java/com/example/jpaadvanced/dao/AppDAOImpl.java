@@ -39,10 +39,10 @@ public class AppDAOImpl implements AppDAO {
         Instructor temp = entityManager.find(Instructor.class, theId);
 
         //get courses
-        List<Course> courses=temp.getCourses();
+        List<Course> courses = temp.getCourses();
 
         //break association of all course for the instructor
-        courses.forEach(x->temp.setCourses(null));
+        courses.forEach(x -> temp.setCourses(null));
 
         //delete instructor
         entityManager.remove(temp);
@@ -79,9 +79,9 @@ public class AppDAOImpl implements AppDAO {
 
     @Override
     public Instructor findInstructorByIdJoinFetch(int theId) {
-        TypedQuery<Instructor> query=entityManager.createQuery(
-                "select i from Instructor i join fetch i.courses join fetch i.instructorDetail where i.id=:data",Instructor.class);
-        query.setParameter("data",theId);
+        TypedQuery<Instructor> query = entityManager.createQuery(
+                "select i from Instructor i join fetch i.courses join fetch i.instructorDetail where i.id=:data", Instructor.class);
+        query.setParameter("data", theId);
         return query.getSingleResult();
     }
 
@@ -93,7 +93,7 @@ public class AppDAOImpl implements AppDAO {
 
     @Override
     public Course findCourseById(int theId) {
-        return entityManager.find(Course.class,theId);
+        return entityManager.find(Course.class, theId);
     }
 
     @Override
@@ -103,10 +103,28 @@ public class AppDAOImpl implements AppDAO {
     }
 
     @Override
+    @Transactional
     public void deleteCourseById(int theId) {
         // retrieve course
-        Course course=entityManager.find(Course.class,theId);
+        Course course = entityManager.find(Course.class, theId);
 
         entityManager.remove(course);
     }
+
+    @Override
+    @Transactional
+    public void save(Course thCourse) {
+        entityManager.persist(thCourse);
+    }
+
+    @Override
+    public Course findCourseAndReviewsByCourseId(int theId) {
+        TypedQuery<Course> query= entityManager.createQuery(
+                "select c from Course c join fetch c.reviews where c.id=:data", Course.class);
+
+        query.setParameter("data", theId);
+
+        return query.getSingleResult();
+    }
+
 }
