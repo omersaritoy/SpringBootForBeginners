@@ -79,7 +79,7 @@ The projects in this repository cover the following topics:
 
 1. Clone the repository:
 
-git clone https://github.com/your-username/repository-name.git
+git clone https://github.com/omersaritoy/SpringBotForBeginners.git
 
 2.Create the required database in MySQL.
 
