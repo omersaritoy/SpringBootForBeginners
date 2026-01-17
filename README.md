@@ -29,7 +29,7 @@ The projects in this repository cover the following topics:
 - JPQL and native queries
 - One-to-One, One-to-Many, Many-to-Many relationships
 - Lazy vs Eager fetching
-- Transaction management
+
 
 ### 🌐 RESTful Web Services
 - REST API design
