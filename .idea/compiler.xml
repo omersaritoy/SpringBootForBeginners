@@ -25,6 +25,7 @@
         <module name="Bean-Scope (1)" />
         <module name="SpringBoot-RestAPI-Demo" />
         <module name="CRUD-Demo" />
+        <module name="AOPDemo" />
         <module name="security-demo" />
         <module name="SpringBoot-Rest-CRUD-JPA" />
         <module name="OpenAPI-Swagger" />
@@ -41,6 +42,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="AOPDemo" options="-parameters" />
       <module name="Actuator-Security-Demo" options="-parameters" />
       <module name="Bean-Scope" options="-parameters" />
       <module name="Bean-Scope (1)" options="-parameters" />
