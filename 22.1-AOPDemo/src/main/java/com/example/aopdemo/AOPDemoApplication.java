@@ -26,7 +26,7 @@ public class AOPDemoApplication {
         theAccountDAO.addAccount();
 
         //do it again
-        System.out.println("\n let's call again!\n");
+        System.out.println("\n\nlet's call again!\n");
 
 
         //call the business method again
