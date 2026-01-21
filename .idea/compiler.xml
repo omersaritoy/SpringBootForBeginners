@@ -24,6 +24,7 @@
         <module name="jpa-advanced (1)" />
         <module name="Bean-Scope (1)" />
         <module name="SpringBoot-RestAPI-Demo" />
+        <module name="AOPDemo (1)" />
         <module name="CRUD-Demo" />
         <module name="AOPDemo" />
         <module name="security-demo" />
@@ -43,6 +44,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="AOPDemo" options="-parameters" />
+      <module name="AOPDemo (1)" options="-parameters" />
       <module name="Actuator-Security-Demo" options="-parameters" />
       <module name="Bean-Scope" options="-parameters" />
       <module name="Bean-Scope (1)" options="-parameters" />

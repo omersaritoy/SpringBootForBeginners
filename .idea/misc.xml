@@ -30,6 +30,7 @@
         <option value="$PROJECT_DIR$/21.2-jpa-one-to-one-bi/pom.xml" />
         <option value="$PROJECT_DIR$/21.3-jpa-one-to-many/pom.xml" />
         <option value="$PROJECT_DIR$/22.1-AOPDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/22.2-AOPDemo-PointcutDeclarations/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
