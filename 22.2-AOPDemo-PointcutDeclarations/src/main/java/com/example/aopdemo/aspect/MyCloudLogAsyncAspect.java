@@ -3,22 +3,15 @@ package com.example.aopdemo.aspect;
 
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
-import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 @Aspect
 @Component
-@Order(3)
-public class MyDemoLoggingAspect {
-
+@Order(1)
+public class MyCloudLogAsyncAspect {
     @Before("com.example.aopdemo.aspect.PointcutsAspect.forDaoPackageNoGetterSetter()")
-    public void performApiAnalytics() {
-        System.out.println("\n-------> Performing API Analytics");
-
-
-
+    public void logToCloudAsync() {
+        System.out.println("\n-------> Logging to Cloud in async  fashion");
     }
-
-
 }
