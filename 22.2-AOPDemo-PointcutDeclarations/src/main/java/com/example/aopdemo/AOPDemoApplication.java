@@ -8,6 +8,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @SpringBootApplication
 public class AOPDemoApplication {
 
@@ -18,8 +21,21 @@ public class AOPDemoApplication {
     @Bean
     public CommandLineRunner commandLineRunner(AccountDAO theAccountDAO, MembershipDAO theMembershipDAO) {
         return runner -> {
-            demoTheBeforeAdvice(theAccountDAO, theMembershipDAO);
+            // demoTheBeforeAdvice(theAccountDAO, theMembershipDAO);
+            demoTheAfterReturningAdvice(theAccountDAO);
         };
+    }
+
+    private void demoTheAfterReturningAdvice(AccountDAO theAccountDAO) {
+        // call method to find the accounts
+        List<Account> accounts = theAccountDAO.findAccounts();
+
+        //display the accounts
+        System.out.println("\n\nMain Program:demoTheAfterReturningAdvice");
+        System.out.println("--------");
+        System.out.println(accounts);
+        System.out.println("\n");
+
     }
 
     private void demoTheBeforeAdvice(AccountDAO theAccountDAO, MembershipDAO theMembershipDAO) {
@@ -27,15 +43,15 @@ public class AOPDemoApplication {
         Account account = new Account();
         account.setName("John");
         account.setLevel("Platinum");
-        theAccountDAO.addAccount(account,true);
+        theAccountDAO.addAccount(account, true);
         theAccountDAO.doWork();
 
         //call the accountdao getter/setter methods
         theAccountDAO.setName("foobar");
         theAccountDAO.setServiceCode("silver");
 
-        String name=theAccountDAO.getName();
-        String serviceCode=theAccountDAO.getServiceCode();
+        String name = theAccountDAO.getName();
+        String serviceCode = theAccountDAO.getServiceCode();
 
         //call the membership business method
         theMembershipDAO.addAccount();

@@ -5,6 +5,9 @@ import com.example.aopdemo.Account;
 
 import org.springframework.stereotype.Repository;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Repository
 public class AccountDAOImpl implements AccountDAO {
 
@@ -40,5 +43,18 @@ public class AccountDAOImpl implements AccountDAO {
     public void setServiceCode(String serviceCode) {
         System.out.println(getClass() + ": in setServiceCode()");
         this.serviceCode = serviceCode;
+    }
+
+    @Override
+    public List<Account> findAccounts() {
+        List<Account> accounts = new ArrayList<>();
+
+        //create simple accounts;
+        accounts.add(new Account("John", "Silver"));
+        accounts.add(new Account("Luis", "Gold"));
+        accounts.add(new Account("Ahmet", "Platinum"));
+        accounts.add(new Account("joni", "Bronze"));
+
+        return accounts;
     }
 }
