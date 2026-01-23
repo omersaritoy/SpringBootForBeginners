@@ -3,10 +3,7 @@ package com.example.aopdemo.aspect;
 
 import com.example.aopdemo.Account;
 import org.aspectj.lang.JoinPoint;
-import org.aspectj.lang.annotation.AfterReturning;
-import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.lang.annotation.Before;
-import org.aspectj.lang.annotation.Pointcut;
+import org.aspectj.lang.annotation.*;
 import org.aspectj.lang.reflect.MethodSignature;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
@@ -17,6 +14,22 @@ import java.util.List;
 @Component
 @Order(3)
 public class MyDemoLoggingAspect {
+
+
+    @AfterThrowing(
+            pointcut = "execution(* com.example.aopdemo.dao.AccountDAO.findAccounts(..))",
+            throwing = "theExc"
+    )
+    public void afterThrowingFindAccountsAdvice(JoinPoint joinPoint,Throwable theExc) {
+
+
+        // print out which method we are advising on
+        String method = joinPoint.getSignature().toShortString();
+        System.out.println("\n=====>>> Executing @AfterThrowing on method: " + method);
+
+        // log the exception
+        System.out.println("\n=====>>> The exception is: " + theExc);
+    }
 
 
     // add a new advice for @AfterReturning on the findAccounts method
@@ -30,19 +43,19 @@ public class MyDemoLoggingAspect {
         System.out.println("------------");
 
         //print out the results of the method call
-        System.out.println("\n----------->Result is: "+result);
+        System.out.println("\n----------->Result is: " + result);
 
 
         //let's post-process the data... let's modify it
         //convert the account names to uppercase
         convertAccountNamesToUpperCase(result);
 
-        System.out.println("\n\n\n--------->Result Modify is :"+result);
+        System.out.println("\n\n\n--------->Result Modify is :" + result);
     }
 
     private void convertAccountNamesToUpperCase(List<Account> result) {
         //loop through accounts
-        result.forEach(x->x.setName(x.getName().toUpperCase()));
+        result.forEach(x -> x.setName(x.getName().toUpperCase()));
 
     }
 
