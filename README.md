@@ -62,7 +62,7 @@ The projects in this repository cover the following topics:
 ## 🛠️ Technologies Used
 
 - **Java 17+**
-- **Spring Boot 3**
+- **Spring Boot  and Spring boot 4**
 - **Spring Framework 6**
 - **Spring Data JPA**
 - **Hibernate**
@@ -71,7 +71,6 @@ The projects in this repository cover the following topics:
 - **Thymeleaf**
 - **MySQL**
 - **Maven**
-- **Lombok**
 
 ---
 
